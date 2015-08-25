@@ -1,0 +1,65 @@
+
+//
+//  BZ.pch
+//  美团团购
+//
+//  Created by 尚承教育 on 15/7/16.
+//  Copyright (c) 2015年 魔力包. All rights reserved.
+//
+
+#ifndef _____BZ_pch
+#define _____BZ_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "UIView+Extension.h"
+#import "UIImage+Extension.h"
+#import "UIBarButtonItem+Extension.h"
+#import "NSString+Extension.h"
+#import "MJExtension.h"
+#import "BZLocationDataTool.h"
+#import "BZLoadNewDealsTool.h"
+#import "UIView+AutoLayout.h"
+#import "UIBarButtonItem+Extension.h"
+#import "MJExtension.h"
+#import "UIImageView+WebCache.h"
+#import "BZNavigationController.h"
+
+#define BZColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define BZScreenW [UIScreen mainScreen].bounds.size.width
+#define BZScreenH [UIScreen mainScreen].bounds.size.height
+
+#define BZTabBarBtnTitleColor BZColor(54,182,169)
+#define BZBgColor BZColor(239,239,239)
+
+
+
+#define BZChangeCityRigionNotification @"BZChangeCityRigionNotification"
+#define BZSelectCityRegion @"BZSelectCityRegion"
+
+#define BZGotoCityListViewNotification @"BZGotoCityListViewNotification"
+
+#define BZGotoCategroyViewNotification @"BZGotoCategroyViewNotification"
+#define BZSelectCategory @"BZSelectCategory"
+
+#define BZChangeCityNotification @"BZChangeCityNotification"
+#define BZSelectCity @"BZSelectCity"
+
+#define BZNotificationCenter [NSNotificationCenter defaultCenter]
+
+#define BZChangeCityViewDidClickCoverNotification @"BZChangeCityViewDidClickCoverNotification"
+
+#define BZSetBaseCellSwitchValueDidChangeNotification @"BZSetBaseCellSwitchValueDidChangeNotification"
+#define BZSetBaseCellSwitchValueDidChangeKey @"BZSetBaseCellSwitchValueDidChangeKey"
+
+
+/*
+ 偏好设置
+ **/
+#define BZUserDefaulSaveFlow @"非wifi下使用省流量模式"
+#define BZMoreSetTimeTipAuto @"BZMoreSetTimeTipAuto"
+#define BZMoreSetTimeTipDate @"BZMoreSetTimeTipDate"
+#define BZMessageTipOn @"每日推荐提醒"
+#define BZSettingCharacterSize @"BZSettingCharacterSize"
+#endif

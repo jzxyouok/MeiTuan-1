@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="fCt-ET-iEi" customClass="BZMenuView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="451"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJc-Y5-p66">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="451"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="0">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickCover:" destination="fCt-ET-iEi" eventType="touchUpInside" id="EqA-ap-Ak8"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="30" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="ioz-3L-oN8" userLabel="main">
+                    <rect key="frame" x="0.0" y="0.0" width="160" height="310"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="310" id="Jp0-P0-JZG"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="fCt-ET-iEi" id="SJg-17-Xoo"/>
+                        <outlet property="delegate" destination="fCt-ET-iEi" id="Eqv-OF-AmS"/>
+                    </connections>
+                </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="30" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="NnF-iM-KiQ" userLabel="sub">
+                    <rect key="frame" x="160" y="0.0" width="160" height="310"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="fCt-ET-iEi" id="QdG-SE-SsW"/>
+                        <outlet property="delegate" destination="fCt-ET-iEi" id="636-9W-CPG"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="NnF-iM-KiQ" firstAttribute="leading" secondItem="ioz-3L-oN8" secondAttribute="trailing" id="1oC-vs-rs3"/>
+                <constraint firstItem="NnF-iM-KiQ" firstAttribute="top" secondItem="fCt-ET-iEi" secondAttribute="top" id="7FS-Nl-pt0"/>
+                <constraint firstItem="ioz-3L-oN8" firstAttribute="width" secondItem="NnF-iM-KiQ" secondAttribute="width" id="Fmd-W2-BgU"/>
+                <constraint firstItem="ioz-3L-oN8" firstAttribute="leading" secondItem="fCt-ET-iEi" secondAttribute="leading" id="ISJ-4y-zti"/>
+                <constraint firstAttribute="bottom" secondItem="JJc-Y5-p66" secondAttribute="bottom" id="IsR-w2-NQh"/>
+                <constraint firstAttribute="trailing" secondItem="JJc-Y5-p66" secondAttribute="trailing" id="Oe2-1g-np3"/>
+                <constraint firstAttribute="trailing" secondItem="NnF-iM-KiQ" secondAttribute="trailing" id="RHz-nb-kdJ"/>
+                <constraint firstItem="ioz-3L-oN8" firstAttribute="top" secondItem="fCt-ET-iEi" secondAttribute="top" id="YLP-b7-nUM"/>
+                <constraint firstItem="ioz-3L-oN8" firstAttribute="height" secondItem="NnF-iM-KiQ" secondAttribute="height" id="fiI-5K-TUP"/>
+                <constraint firstItem="JJc-Y5-p66" firstAttribute="top" secondItem="fCt-ET-iEi" secondAttribute="top" id="jiu-ZN-Ssw"/>
+                <constraint firstItem="JJc-Y5-p66" firstAttribute="leading" secondItem="fCt-ET-iEi" secondAttribute="leading" id="mUC-CQ-VVY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="mainView" destination="ioz-3L-oN8" id="KNw-7r-U6B"/>
+                <outlet property="subView" destination="NnF-iM-KiQ" id="G0O-fk-Jlf"/>
+            </connections>
+            <point key="canvasLocation" x="248" y="307.5"/>
+        </view>
+    </objects>
+</document>

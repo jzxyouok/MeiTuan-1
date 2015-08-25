@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="FCa-PA-KbE" customClass="BZChangeCityCell">
+            <rect key="frame" x="0.0" y="0.0" width="402" height="77"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="切换" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQc-Ya-RhM">
+                    <rect key="frame" x="327" y="29" width="35" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="I22-WA-ldO"/>
+                        <constraint firstAttribute="height" constant="20" id="Zsa-LC-5Jv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z74-LQ-pSU">
+                    <rect key="frame" x="367" y="24" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="DCs-4c-joZ"/>
+                        <constraint firstAttribute="height" constant="30" id="mGl-xL-4UF"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="miE-X4-MfW">
+                    <rect key="frame" x="20" y="0.0" width="382" height="77"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="当前城市：北京">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="Z74-LQ-pSU" secondAttribute="centerY" id="ClN-n7-tc0"/>
+                <constraint firstAttribute="bottom" secondItem="miE-X4-MfW" secondAttribute="bottom" id="JbK-DU-u9k"/>
+                <constraint firstItem="miE-X4-MfW" firstAttribute="top" secondItem="FCa-PA-KbE" secondAttribute="top" id="Nzc-vf-Qee"/>
+                <constraint firstAttribute="trailing" secondItem="Z74-LQ-pSU" secondAttribute="trailing" constant="5" id="bIr-yh-Pby"/>
+                <constraint firstAttribute="centerY" secondItem="hQc-Ya-RhM" secondAttribute="centerY" id="bU9-DS-j4Y"/>
+                <constraint firstItem="miE-X4-MfW" firstAttribute="leading" secondItem="FCa-PA-KbE" secondAttribute="leading" constant="20" id="dq8-WM-Ke4"/>
+                <constraint firstAttribute="trailing" secondItem="miE-X4-MfW" secondAttribute="trailing" id="eut-PB-KzA"/>
+                <constraint firstItem="Z74-LQ-pSU" firstAttribute="leading" secondItem="hQc-Ya-RhM" secondAttribute="trailing" constant="5" id="nNI-Yq-TxA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="changeCityBtn" destination="miE-X4-MfW" id="aIy-a4-OMe"/>
+            </connections>
+            <point key="canvasLocation" x="650" y="553.5"/>
+        </view>
+    </objects>
+</document>
